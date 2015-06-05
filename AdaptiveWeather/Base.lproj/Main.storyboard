@@ -47,14 +47,44 @@
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137257" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="OvC-jM-qfy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="3rR-k8-8id"/>
                             <constraint firstItem="i5B-Cg-IdT" firstAttribute="top" secondItem="OvC-jM-qfy" secondAttribute="bottom" constant="20" id="EqU-WG-phT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i5B-Cg-IdT" secondAttribute="bottom" id="N9E-GE-aqt"/>
+                            <constraint firstItem="i5B-Cg-IdT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="180" id="TjS-HK-rPY">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="OvC-jM-qfy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="VCQ-ip-FRW"/>
                             <constraint firstAttribute="trailing" secondItem="i5B-Cg-IdT" secondAttribute="trailing" id="efo-aa-3Dq"/>
+                            <constraint firstItem="i5B-Cg-IdT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="flf-Td-vlz"/>
                             <constraint firstItem="i5B-Cg-IdT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ibh-Oz-AU8"/>
                             <constraint firstAttribute="centerX" secondItem="OvC-jM-qfy" secondAttribute="centerX" id="qBR-Bx-ZKV"/>
+                            <constraint firstAttribute="centerY" secondItem="OvC-jM-qfy" secondAttribute="centerY" id="rYQ-GK-cvd"/>
                             <constraint firstItem="OvC-jM-qfy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wUH-cx-Dgk"/>
                             <constraint firstItem="OvC-jM-qfy" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="xsD-5U-THs"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3rR-k8-8id"/>
+                                <exclude reference="VCQ-ip-FRW"/>
+                                <exclude reference="rYQ-GK-cvd"/>
+                                <exclude reference="TjS-HK-rPY"/>
+                                <exclude reference="flf-Td-vlz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="3rR-k8-8id"/>
+                                <include reference="VCQ-ip-FRW"/>
+                                <exclude reference="qBR-Bx-ZKV"/>
+                                <include reference="rYQ-GK-cvd"/>
+                                <exclude reference="wUH-cx-Dgk"/>
+                                <exclude reference="xsD-5U-THs"/>
+                                <exclude reference="EqU-WG-phT"/>
+                                <include reference="TjS-HK-rPY"/>
+                                <include reference="flf-Td-vlz"/>
+                                <exclude reference="ibh-Oz-AU8"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
