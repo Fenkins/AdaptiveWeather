@@ -19,6 +19,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="OvC-jM-qfy">
                                 <rect key="frame" x="150" y="20" width="300" height="197"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="150" y="20" width="300" height="160"/>
+                                </variation>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5B-Cg-IdT" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
@@ -34,6 +37,9 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="73" y="-105" width="454" height="295"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,18 +49,46 @@
                                     <constraint firstAttribute="bottom" secondItem="41f-eK-Tb5" secondAttribute="bottom" constant="10" id="cjy-H2-oew"/>
                                     <constraint firstAttribute="centerX" secondItem="41f-eK-Tb5" secondAttribute="centerX" id="jxh-Rd-bqq"/>
                                 </constraints>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="200" width="600" height="200"/>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137257" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerY" secondItem="OvC-jM-qfy" secondAttribute="centerY" id="2EO-VS-aB5"/>
                             <constraint firstItem="i5B-Cg-IdT" firstAttribute="top" secondItem="OvC-jM-qfy" secondAttribute="bottom" constant="20" id="EqU-WG-phT"/>
+                            <constraint firstItem="OvC-jM-qfy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="FOS-n3-jCZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i5B-Cg-IdT" secondAttribute="bottom" id="N9E-GE-aqt"/>
+                            <constraint firstItem="OvC-jM-qfy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="WqT-1D-Kio"/>
+                            <constraint firstAttribute="width" secondItem="i5B-Cg-IdT" secondAttribute="width" multiplier="0.5" id="cus-Ar-RyO"/>
                             <constraint firstAttribute="trailing" secondItem="i5B-Cg-IdT" secondAttribute="trailing" id="efo-aa-3Dq"/>
                             <constraint firstItem="i5B-Cg-IdT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ibh-Oz-AU8"/>
                             <constraint firstAttribute="centerX" secondItem="OvC-jM-qfy" secondAttribute="centerX" id="qBR-Bx-ZKV"/>
                             <constraint firstItem="OvC-jM-qfy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wUH-cx-Dgk"/>
                             <constraint firstItem="OvC-jM-qfy" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="xsD-5U-THs"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2EO-VS-aB5"/>
+                                <exclude reference="FOS-n3-jCZ"/>
+                                <exclude reference="WqT-1D-Kio"/>
+                                <exclude reference="cus-Ar-RyO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="2EO-VS-aB5"/>
+                                <include reference="FOS-n3-jCZ"/>
+                                <include reference="WqT-1D-Kio"/>
+                                <exclude reference="qBR-Bx-ZKV"/>
+                                <exclude reference="wUH-cx-Dgk"/>
+                                <exclude reference="xsD-5U-THs"/>
+                                <exclude reference="EqU-WG-phT"/>
+                                <include reference="cus-Ar-RyO"/>
+                                <exclude reference="ibh-Oz-AU8"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
